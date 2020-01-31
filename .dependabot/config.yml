@@ -1,0 +1,11 @@
+version: 1
+
+update_configs:
+  - package_manager: submodules
+    directory: '/'
+    update_schedule: monthly
+    default_reviewers:
+      - '0az'
+    commit_message:
+      prefix: 'chore:'
+      include_scope: true
