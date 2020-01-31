@@ -1,16 +1,13 @@
+# https://editorconfig.org
+
 root = true
 
 [*]
 end_of_line = lf
 insert_final_newline = true
+trim_trailing_whitespace = true
 
-[*.{css,html,js,py}]
+[*.{editorconfig,json,md,toml,xml,yaml,yml}]
 charset = utf-8
-
-[*.{css,html,js}]
-indent_style = space
 indent_size = 2
-
-[*.py]
 indent_style = space
-indent_size = 4
