@@ -7,5 +7,5 @@ update_configs:
     default_reviewers:
       - '0az'
     commit_message:
-      prefix: 'chore'
-      include_scope: true
+      prefix: 'deps'
+      include_scope: false
