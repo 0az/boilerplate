@@ -4,7 +4,7 @@ skip-string-normalization = true
 exclude = '''
 /(
   \.eggs
-  | .git
+  | \.git
   | \.hg
   | \.mypy_cache
   | \.nox
@@ -17,3 +17,8 @@ exclude = '''
   | dist
 )/
 '''
+
+[tool.isort]
+profile = 'black'
+line_length = 80
+skip_gitignore = true
