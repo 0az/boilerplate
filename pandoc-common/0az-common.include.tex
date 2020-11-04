@@ -1,0 +1,51 @@
+\newcommand{\requirepackage}[2][]{\usepackage[#1]{#2}}
+
+\requirepackage{amsthm}
+\requirepackage{mathtools}
+\requirepackage{booktabs}
+
+%%%%%%%%
+% Operators
+%%%%
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\DeclareMathOperator{\sign}{sign}
+
+\DeclareMathOperator{\Col}{Col}
+\DeclareMathOperator{\Nul}{Nul}
+\DeclareMathOperator{\Row}{Row}
+
+\DeclareMathOperator{\diag}{diag}
+
+% Probability Operators
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\MSE}{MSE}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\mode}{mode}
+
+
+%%%%%%%%
+% Paired Delimiters
+%%%%
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+% Angle bracketed VECtor
+\DeclarePairedDelimiter{\avec}{\langle}{\rangle}
+\DeclarePairedDelimiter{\lnorm}{\lVert}{\rVert}
+
+%%%%%%%%
+% Typographic Utilities
+%%%%
+% Transpose suffix operator
+\newcommand*{\tran}{^{\mkern-1.5mu\mathsf{T}}}
+% Row Vector
+\newcommand{\rvec}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+
+% Spaced Sqrt
+\newcommand{\ssqrt}[2][]{\sqrt[#1]{#2}\,}
+
+% Force equation number/tag in unnumbered environment
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+% Force QED at current location
+\newcommand\forceqed{\pushQED{\qed}\qedhere\popQED}
